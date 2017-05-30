@@ -36,7 +36,7 @@ public abstract class Element {
      * @param sprite
      *            the new sprite
      */
-    private void setSprite(final char sprite) {
+    private void setSprite(char sprite) {
         this.sprite = sprite;
     }
 

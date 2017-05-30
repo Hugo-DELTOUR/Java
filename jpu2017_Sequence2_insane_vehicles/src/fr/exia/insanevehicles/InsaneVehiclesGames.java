@@ -28,9 +28,9 @@ public class InsaneVehiclesGames {
     /** The road. */
     private Road            road;
 
-	private Mobile voiture;
+	private Mobile 			voiture;
 
-	private Mobile MACADAM;
+	private Mobile			MACADAM;
 
     /**
      * Instantiates a new insane vehicles games.
@@ -68,17 +68,11 @@ public class InsaneVehiclesGames {
     			Element e = MotionlessElementsFactory.create(c);
 //    			Je place l'element sur la route
     			road.setOnTheRoadXY(e, x, y);
-    			
     		}
-    		
     		y++;
-    		
     	}
-    	
     	input.close();
-    	
     	return road;
-    	
     }
     
     private void addVehicleOnTheRoad(){
@@ -96,14 +90,13 @@ public class InsaneVehiclesGames {
     public final void play() {
         while(true){ 	
         	// Deplacer vehicule
-        	moveY(getVehicle(), 1);
+        	moveY(getVehicle(), 1);        	
         	//afficher
         	Utilitaires.clear();
         	this.getRoad().show(0);
         	//delay
-        	Utilitaires.sleep(1000);        	
+        	Utilitaires.sleep(1000);
         }
-
     }
     
     private Mobile getVehicle() {
@@ -115,9 +108,8 @@ public class InsaneVehiclesGames {
     	
     	getRoad().removeOnTheRoad(coord, MACADAM);
     	coord.addY(nbrDePas);
-    	Element e =getRoad().removeOnTheRoad(coord, element);
+    	getRoad().removeOnTheRoad(coord, element);
     	
-    	//TO DO implementer function + ce qui va avec!!!!!!!!!
     }
 
     /**

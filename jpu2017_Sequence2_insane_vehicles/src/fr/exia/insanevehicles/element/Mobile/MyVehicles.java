@@ -1,6 +1,6 @@
 package fr.exia.insanevehicles.element.Mobile;
 
-class MyVehicles extends Mobile {
+public class MyVehicles extends Mobile {
 	
 	private static final char Sprite = '#';
 	

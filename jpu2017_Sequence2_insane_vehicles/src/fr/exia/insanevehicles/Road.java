@@ -29,8 +29,6 @@ public class Road {
     /** The on the road. */
     private final 			  Element[][] onTheRoad;
 
-	private Coordinates element;
-
     /**
      * Instantiates a new road.
      *
@@ -63,7 +61,8 @@ public class Road {
         for (int view = 0; view < this.getView(); view++) {
             y = (y + 1) % this.getHeight();
             for (int x = 0; x < this.getWidth(); x++) {
-                System.out.print(this.getOnTheRoadXY(x, y).getSprite());
+                char sprite = this.getOnTheRoadXY(x, y).getSprite();
+            	System.out.print(sprite);
             }
             System.out.print("\n");
         }
@@ -205,9 +204,9 @@ public class Road {
 
 	public Element removeOnTheRoad(Coordinates coord, Mobile element) {
 		
-		this.setOnTheRoadXY(element,1,1);
-		
-		return null;
+		Element machin =this.getOnTheRoadXY(coord.getX(), coord.getY());
+		this.setOnTheRoadXY(element, coord.getX(), coord.getY());
+		return machin;
 		
 	}
 

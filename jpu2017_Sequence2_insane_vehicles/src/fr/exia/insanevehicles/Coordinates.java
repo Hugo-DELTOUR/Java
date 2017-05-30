@@ -26,6 +26,5 @@ public class Coordinates {
 		// TODO Auto-generated method stub
 		
 		this.y = this.y + nbrDePas;
-		
 	}
 }

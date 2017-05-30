@@ -6,7 +6,7 @@ package fr.exia.insanevehicles.element.motionless;
  * @author Jade
  * @version 0.1
  */
-class Macadam extends MotionlessElement {
+public class Macadam extends MotionlessElement {
 
     /** The Constant SPRITE. */
     private static final char SPRITE = ' ';
